@@ -15,7 +15,7 @@ body {
 /*     line-height: 1.15;                         */
 /* ============================================== */
 
-/* --------------------- VAR  ------------------------   */
+/* ------------------- VAR -----------------------   */
 :root {
   --hover-color: #404bbf;
   --title-color: #2e2f42;
@@ -101,7 +101,7 @@ body {
 .header-link-menu:hover,
 .header-link-menu:focus {
   color: var(--hover-color);
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 .header-link-address:hover,
@@ -134,7 +134,6 @@ body {
   letter-spacing: 0.02em;
   /* Geometry */
   max-width: 496px;
-
   margin: 0 auto 48px;
 }
 
@@ -280,7 +279,7 @@ body {
   letter-spacing: 0.02em;
   /* Geometry */
   max-width: 264px;
-  margin-top: 17.5px;
+  /* margin-top: 17.5px; */
 }
 
 /* -------------------  /Footer ----------------------- */
@@ -340,7 +339,7 @@ body {
 }
 
 .portfolio-list-view {
-  margin-bottom: 48px;
+  /* margin-bottom: 48px; */
   width: 360px;
 }
 
@@ -418,8 +417,7 @@ img {
 
 .header-main {
   /* geometry */
-  padding-top: 24px;
-  padding-bottom: 24px;
+
   border-bottom: 1px solid var(--border-color);
 }
 
