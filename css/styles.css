@@ -122,6 +122,14 @@ body {
   background-color: var(--title-color);
   /* Geometry */
   padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1440рх;
 }
 
 .main-title {
@@ -442,4 +450,178 @@ img {
   /* gap: 76px; */
 }
 
-/* hw3-version5-portfolio7 */
+/* hw4-version2 */
+
+/* =========================================================================================================================================================================== */
+
+/* 
+
+.hero {
+  background-color: #2a2a2a;
+  background-image: url(шлях до зображення);
+  background-repeat: no-repeat; (repeat | repeat-x | repeat-y | no-repeat)
+  background-position: center; (У якості значення можна використовувати абсолютні (px) чи відносні (%) одиниці, і навіть ключові слова (top, bottom, right, left, center).)
+  backrgound-position: right 30px bottom 20px;
+
+
+  background-size: cover;
+  background-size: auto | значення | cover | contain
+}
+
+background-image: linear-gradient(
+	to bottom, 
+	rgba(255, 0, 0, 0.3), 
+	rgba(255, 0, 0, 0.3)
+	),
+	url(шлях до зображення);
+Формат значення кольору може бути будь-яким: ключові слова, rgb, rgba чи hex, та їх можна змішувати.
+to top, to right, to bottom, to left
+
+to top left, початкова точка градієнта буде розташована в правому нижньому кутку, тобто протилежному
+
+********
+background: background-color background-image background-repeat background-position background-attachment background-size
+
+*/
+
+/* SHADOW
+box-shadow: inset <x-offset> <y-offset> <blur> <spread> <color>
+*/
+
+/* Алгоритм створення SVG-спрайт
+
+
+
+Відкрий макет у Figma, обери там всі іконки й експортуй їх в SVG-форматі на свій комп’ютер.
+Зайди на icomoon.io , натисни кнопку Import Icons зверху ліворуч та додай всі іконки.
+Натисни Generate SVG & More внизу ліворуч.
+Натиснути Download внизу ліворуч. */
+
+/* ::before ::after */
+/* Перевір чи використали властивість content  */
+
+/* 
+.box::before, .box::after {
+	font-size: 30px;
+} 
+*/
+
+/*  Застосувати стилі до псевдоелементу.box::after при ховері на елемент .box 
+.box:hover::after {
+  background-color: tomato;
+} */
+
+/* 
+ */
+/*  */
+/* 
+  */
+
+/* position: 
+  
+  static | relative | absolute | fixed | sticky */
+/* .box.relative {
+  position: relative;
+  top: 100px;
+  left: 10px;
+} */
+
+/* .chat-button {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  background-image: url("https://cdn-icons-png.flaticon.com/512/1653/1653630.png");
+  background-size: contain;
+
+  cursor: pointer;
+} */
+
+/*  */
+/* transition-property: <властивість>
+transition-duration: <час>
+transition-timing-function: <функція розподілу часу>
+transition-delay: <затримка> */
+
+/* transition-property */
+/* задає властивості, до яких буде застосовано ефект переходу */
+
+/* transition-duration */
+/* transition-timing-function */
+/* задає функцію розподілу часу, тобто поведінку анімації. */
+/* Ключові слова:
+
+ease — перехід починається повільно, швидко прискорюється, а потім знову сповільнюється в кінці.
+linear — перехід має рівномірну швидкість.
+ease-in — починається повільно, швидкість переходу збільшується до повного завершення переходу.
+ease-out — починається швидко, уповільнюється протягом переходу.
+ease-in-out — починається повільно, прискорюється, а потім знову сповільнюється. */
+
+/* transition-delay */
+
+/* transition: [property] [duration] [timing-function] [delay] */
+
+/* заголовок з підсвічуванням */
+/* .hero-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  font-size: 32px;
+  line-height: 1.333;
+  letter-spacing: 3px;
+}
+
+.hero-title::before,
+.hero-title::after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #fff;
+}
+.hero-title:hover::before, .hero-title:hover::after { background-color: #03a9f4;} */
+/*  */
+/*  */
+/*  */
+/* transform: none | <тип трансформації> <тип трансформації> ...
+.box {
+  transform: scale(1.15);
+}
+Наприклад, значення scale(1.25) — це 125% від початкового розміру, а scale(0.75) — 75%. */
+/* .box {
+  transform: rotate(45deg);
+}
+rotate(0.5turn) це півоберту, аналог rotate(180deg) */
+/*  */
+/* translateX(tx), translateY(ty) і translate(tx, ty) */
+/* Значення можуть бути у пікселях чи відсотках. Якщо значення задано у відсотках, воно розраховується від розміру зміщуваного елемента.
+
+.box {
+  transform: translate(100px, 200px);
+}
+ */
+
+/* .parent {
+	position: relative;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+/* skewX(кут), skewY(кут) і skew(x-кут, y-кут)
+.box {
+  transform: skew(30deg);
+} */
