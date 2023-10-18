@@ -616,61 +616,18 @@ img {
 .modal-close-btn:hover,
 .modal-close-btn:focus {
   background-color: var(--hover-color);
-  fill: #fff;
   border: none;
 }
-
-/* .close-icon {
-  fill: var(--title-color);
-  background-color: #e7e9fc;
-  flex-shrink: 0;
-} */
 
 .close {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn:hover .close,
-.modal-close-btn:focus .close {
-  background-color: var(--hover-color);
-  border: none;
+.modal-close-btn:hover .close-icon,
+.modal-close-btn:focus .close-icon {
+  fill: var(--maintitle-color);
 }
 
-/* button-modal-w{
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #e7e9fc;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0;
-    cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
-.button-modal-w:hover,
-.button-modal-w:focus{
-    background-color: #404bbf;
-    border: none;
-}
-
-
-.close{
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button-modal-w:hover .close,
-.button-modal-w:focus .close{
-    fill: #ffffff;
-} */
-
-/*  */
 /* ====================================================== */
 /*                     overlay                           */
 /* ====================================================== */
