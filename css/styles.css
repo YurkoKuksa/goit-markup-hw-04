@@ -78,6 +78,21 @@ body {
   padding: 24px 0;
 }
 
+/* псевдоелемент */
+/* .current {
+} */
+
+.current::after {
+  content: "";
+  display: block;
+  border-radius: 2px;
+  background-color: var(--OCEAN, #404bbf);
+  width: 48px;
+  height: 4px;
+  flex-shrink: 0;
+  fill: var(--hover-color);
+}
+
 /* .header-menu-list {} */
 
 .header-link-address {
@@ -172,6 +187,21 @@ body {
   padding: 120px 0;
 }
 
+/* svg - description*/
+.description-svg-items {
+  border-radius: 4px;
+  background: var(--CLOUD, #f4f4fd);
+  width: 264px;
+  height: 112px;
+  flex-shrink: 0;
+  padding: 24px 100px;
+  margin-bottom: 8px;
+}
+
+.icon {
+  flex-shrink: 0;
+}
+
 .dscr-titles {
   color: var(--title-color);
   font-size: 20px;
@@ -252,6 +282,48 @@ body {
   padding: 32px 0;
 }
 
+.social-media-ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.social-media-li {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-social-media {
+  /* fill: var(--logo-color); */
+  flex-shrink: 0;
+  fill: var(--section-color);
+}
+
+.icon-media-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--logo-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--section-color);
+}
+
+.icon-media-link:hover,
+.icon-media-link:focus {
+  background-color: var(--hover-color);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* Section 5 */
+
+/*  */
+
+/*  */
+
 /* ------------------------/main -------------------------*/
 
 /* ====================== FOOTER ======================== */
@@ -288,6 +360,14 @@ body {
   /* Geometry */
   max-width: 264px;
   /* margin-top: 17.5px; */
+}
+
+.foorer-header-icons {
+  color: var(--maintitle-color);
+
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
 }
 
 /* -------------------  /Footer ----------------------- */
@@ -420,7 +500,7 @@ img {
 
   margin: 0 auto;
   /* тимчасово */
-  /* outline: 2px solid red; */
+  outline: 2px solid red;
 }
 
 .header-main {
