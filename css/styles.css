@@ -25,6 +25,7 @@ body {
   --section-color: #f4f4fd;
   --border-color: #e7e9fc;
   --icon-color: #8e8f99;
+  --popup-color: #fcfcfc;
 }
 
 /*  -------------------  /var  -----------------------   */
@@ -80,29 +81,20 @@ body {
 }
 
 /* псевдоелемент */
-/* .current {
-} */
-
-.current::after {
-  content: "";
-  display: block;
-  border-radius: 2px;
-  background-color: var(--hover-color);
-  width: 48px;
-  height: 4px;
-  flex-shrink: 0;
-  fill: var(--hover-color);
+.current {
+  color: #404bbf;
+  position: relative;
 }
-
 .current::after {
   content: "";
-  display: block;
-  border-radius: 2px;
-  background-color: var(--hover-color);
-  width: 48px;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
   height: 4px;
-  flex-shrink: 0;
-  fill: var(--hover-color);
+  width: 100%;
+  background-color: var(--hover-color);
+  border-radius: 2px;
+  border-bottom: 4px;
 }
 
 /* .header-menu-list {} */
@@ -537,7 +529,7 @@ img {
 
   margin: 0 auto;
   /* тимчасово */
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 .header-main {
@@ -566,6 +558,70 @@ img {
   align-items: center;
   /* gap: 76px; */
 }
+
+/* ===================================================== */
+/*                       POP_UPS                         */
+/* ===================================================== */
+.backdrops {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal {
+  width: 408px;
+  height: 584px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background-color: var(--popup-color);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-close-btn {
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: var(--hover-color);
+  fill: #fff;
+}
+
+.close-icon {
+  fill: var(--title-color);
+  background-color: #e7e9fc;
+  flex-shrink: 0;
+}
+
+/* .close-icon:hover,
+.close-icon:focus {
+
+} */
 
 /* hw4-version2 */
 
