@@ -448,10 +448,29 @@ body {
   justify-content: center;
 }
 
+.customer-links {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--icon-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customer-links:hover,
+.customer-links:focus {
+  border-color: var(--hover-color);
+  color: var(--hover-color);
+}
+
 .icon-customers {
   flex-shrink: 0;
-  fill: var(--icon-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: currentColor;
 }
 
 /* ------------------------/main -------------------------*/
@@ -712,13 +731,6 @@ body {
 .box:hover .overlay {
   transform: translatey(0);
 }
-
-/* .overlay p {
-  color: var(--section-color);
-
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-} */
 
 .overlay-p {
   position: absolute;
