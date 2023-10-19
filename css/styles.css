@@ -406,13 +406,13 @@ body {
 .social-media-li {
   width: 40px;
   height: 40px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-social-media {
   /* fill: var(--logo-color); */
   flex-shrink: 0;
   fill: var(--section-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-media-link {
@@ -424,7 +424,6 @@ body {
   align-items: center;
   justify-content: center;
   fill: var(--section-color);
-
   /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
