@@ -518,13 +518,13 @@ body {
 }
 
 .footer-icons-link {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icons-link:hover,
 .footer-icons-link:focus {
   background-color: var(--iconhover-color);
-
+}
 
 /* .social-media-footer {
 } */
@@ -532,12 +532,6 @@ body {
 /* -------------------  /Footer ----------------------- */
 
 /* =================== PORTFOLIO ==================== */
-
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
 
 .button-portfolio {
   color: var(--logo-color);
