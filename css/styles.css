@@ -238,6 +238,8 @@ body {
   background-color: var(--title-color);
   /* Geometry */
   padding: 188px 0;
+  margin-left: auto;
+  margin-right: auto;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -245,7 +247,9 @@ body {
     url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1440рх;
+  background-size: cover;
+
+  max-width: 1440px;
 }
 
 .main-title {
@@ -280,8 +284,10 @@ body {
   min-width: 169px;
   height: 56px;
   border: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Section 2 */
@@ -297,8 +303,11 @@ body {
   width: 264px;
   height: 112px;
   flex-shrink: 0;
-  padding: 24px 100px;
+
   margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon {
@@ -436,6 +445,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-customers {
